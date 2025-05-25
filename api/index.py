@@ -12,7 +12,7 @@ class handler(BaseHTTPRequestHandler):
         self.end_headers()
 
         # Load JSON data
-        data_path = os.path.join(os.path.dirname(__file__), "..", "marks.json")
+        data_path = os.path.join(os.path.dirname(__file__), "..", "q-vercel-python.json.json")
         with open(data_path) as f:
             students = json.load(f)
 
